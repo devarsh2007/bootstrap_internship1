@@ -192,7 +192,8 @@
                                                 <input type="text" name="first"
                                                     id="first"
                                                     placeholder="first name"
-                                                    class=" form-control "   pattern="^\d{4}\s\d{4}\s\d{4}$">
+                                                    class=" form-control "
+                                                    pattern="^\d{4}\s\d{4}\s\d{4}$">
                                                 <label for="first"
                                                     class=" form-label">Adhar</label>
                                             </div>
@@ -205,11 +206,88 @@
                                                 <input type="text" name="first"
                                                     id="first"
                                                     placeholder="first name"
-                                                    class=" form-control " pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}"> 
+                                                    class=" form-control "
+                                                    pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}">
                                                 <label for="first"
                                                     class=" form-label">Pan</label>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-3">
+                                   
+                                    <div class="col-4">
+                                         <label for="gender"
+                                        class=" form-label fw-bold">gender</label><br>
+                                        <div
+                                            class=" form-check form-check-inline">
+                                            <input type="radio" name="gender"
+                                                id="gender"
+                                                class=" form-check-input"
+                                                value="1">
+                                            <label for="gender">male</label>
+                                        </div>
+
+                                        <div
+                                            class=" form-check form-check-inline">
+                                            <input type="radio" name="gender"
+                                                id="gender"
+                                                class=" form-check-input"
+                                                value="2">
+                                            <label for="gender">female</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-4">
+                                        <label for="" class=" form-label fw-bold">Language</label>
+                                        <div class=" form-check">
+                                            <input type="checkbox" name="eng" id="eng" class=" form-check-input" >
+                                            <label for="eng">eng</label>
+                                        </div>
+
+                                         <div class=" form-check">
+                                            <input type="checkbox" name="eng" id="eng" class=" form-check-input" >
+                                            <label for="eng">guj</label>
+                                        </div>
+
+                                         <div class=" form-check">
+                                            <input type="checkbox" name="eng" id="eng" class=" form-check-input" >
+                                            <label for="eng">hindi</label>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-4">
+                                        <label for="cast" class=" form-label">Select Cast</label>
+
+                                        <select name="cast" id="cast" class=" form-select">
+                                            <option value="0">select cast</option>
+                                            <option value="1">Genral</option>
+                                            <option value="2">Sc</option>
+                                            <option value="3">St</option>
+                                            <option value="4">OBC</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+
+                                <div class="row mt-3">
+                                    <div class="col-6">
+                                        <label for="add1" class=" form-label">Address 1</label>
+                                        <textarea class=" form-control" name="add1" id="add1" rows="4"></textarea>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <label for="add1" class=" form-label">Address 2</label>
+                                        <textarea class=" form-control" name="add1" id="add1" rows="4"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-5 text-center">
+                                    <div class="col-12">
+                                        <button class=" btn btn-success w-25" type="submit">submit</button>
+                                        <button class=" btn btn-dark w-25" type="reset">clear all</button>
                                     </div>
                                 </div>
                             </form>
